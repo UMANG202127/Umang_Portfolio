@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Landing from "../components/Landing";
 import { Journey } from "../components/Journey";
 import Contactme from "../components/Contact-me";

@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/libs/util";
-import Image from "next/image";
 import React, {
   createContext,
   useState,

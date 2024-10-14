@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { Timeline } from "../components/ui/timeline";
-import { HeroHighlight, Highlight } from './ui/hero-highlight';
 import Link from 'next/link';
 
 

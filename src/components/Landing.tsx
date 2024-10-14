@@ -6,7 +6,6 @@ import Link from "next/link";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams";
-import { Highlight } from "./ui/hero-highlight";
 
 
 const words = "Recent graduate with a degree in Computer Science and a passion for building seamless and functional user interfaces. With over 1 year of industrial experience in Front-End Development, I specialize in building high performance web application using NextJs and ReactJs. Proficient with CSS and JS Frameworks, withextensive knowledge of UX and User psychology.";
