@@ -13,16 +13,16 @@ const words = "Recent graduate with a degree in Computer Science and a passion f
 
 function Landing() {
   return (
-    <BackgroundBeamsWithCollision className="mt-28">
-        <div className="flex items-center justify-center space-x-10">
+    <BackgroundBeamsWithCollision className="mt-20 md:mt-28">
+        <div className="flex flex-col lg:flex-row items-center justify-center space-x-10">
             <div>
-            <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-6xl font-bold dark:text-white">
+            <div className="max-w-7xl relative mx-auto pt-20 md:pt-30 px-4 w-full  left-0 top-0">
+      <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold dark:text-white">
         The Ultimate <br />Front-end Developer 
       </h1>
 
       <TextGenerateEffect
-      className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200"
+      className="max-w-2xl text-base lg:text-xl mt-8 dark:text-neutral-200"
       words={words} />
       {/* <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
       Recent graduate with a degree in Computer Science and a passion for building seamless and functional
@@ -30,7 +30,7 @@ user interfaces. With over 1 year of industrial experience in <Highlight> Front-
       </p> */}
     </div>
             </div>
-            <div>
+            <div className="">
                 <CardContainer className="inter-var">
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
