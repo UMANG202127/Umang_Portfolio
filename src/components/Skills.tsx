@@ -1,6 +1,8 @@
 'use client';
 import React from 'react'
 import { HoverEffect } from './ui/card-hover-effect'
+import { motion } from 'framer-motion';
+import { LampContainer } from './ui/lamp';
 
 
 export const projects = [
@@ -86,8 +88,11 @@ export const projects = [
 
 function Skills() {
   return (
+    <div>
+      
     <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={projects} />
+    </div>
     </div>
   )
 }
