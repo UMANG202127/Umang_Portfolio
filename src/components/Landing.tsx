@@ -8,7 +8,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams";
 
 
-const words = "Recent graduate with a degree in Computer Science and a passion for building seamless and functional user interfaces. With over 1 year of industrial experience in Front-End Development, I specialize in building high performance web application using NextJs and ReactJs. Proficient with CSS and JS Frameworks, withextensive knowledge of UX and User psychology.";
+const words = "Recent graduate with a degree in Computer Science and a passion for building seamless and functional user interfaces. With over 1 year of industrial experience in Front-End Development, I specialize in building high performance web application using NextJs and ReactJs. Proficient with CSS and JS Frameworks, with extensive knowledge of UX and User psychology.";
 
 
 function Landing() {
@@ -17,7 +17,7 @@ function Landing() {
         <div className="flex flex-col lg:flex-row items-center justify-center space-x-10">
             <div>
             <div className="max-w-7xl relative mx-auto pt-20 md:pt-30 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold dark:text-white">
+      <h1 className="text-2xl md:text-4xl lg:text-6xl text-black font-bold dark:text-white">
         The Ultimate <br />Front-end Developer 
       </h1>
 
@@ -59,19 +59,20 @@ user interfaces. With over 1 year of industrial experience in <Highlight> Front-
           <CardItem
             translateZ={20}
             as={Link}
-            href="https://twitter.com/mannupaaji"
+            href=""
             target="__blank"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
             Contact Me
           </CardItem>
+          <Link href={""}>
           <CardItem
             translateZ={20}
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
             Download CV
-          </CardItem>
+          </CardItem></Link>
         </div>
       </CardBody>
                 </CardContainer>

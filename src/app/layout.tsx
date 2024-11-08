@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import { ThemeProvider } from "@/components/theme-provider"
 
 
 export const metadata: Metadata = {
@@ -21,10 +22,15 @@ export default function RootLayout({
       <body
         className={inter.className}
       >
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            >
         <div className="relative w-full flex item-center justify-center">
           <Navbar />
         </div>
         {children}
+        </ThemeProvider>
       </body>
     </html>
   );
