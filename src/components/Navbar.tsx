@@ -29,27 +29,31 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="UMANG">       
         </MenuItem>
 
-        <MenuItem setActive={setActive} active={active} item="PROJECTS">
-        </MenuItem>
-        
         <MenuItem setActive={setActive} active={active} item="EXPERIENCE">
         </MenuItem>
+
+        <MenuItem setActive={setActive} active={active} item="PROJECTS">
+        </MenuItem>
+
+        <MenuItem setActive={setActive} active={active} item="SKILLS">
+        </MenuItem>
+
         <div className="py-0">
         <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button>
-          <Sun className="h-[1rem] w-[1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Sun className="h-[1rem] w-[1rem] text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-[1rem] w-[1rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("light")}>
+      <DropdownMenuContent className="bg-white border-black/[0.2] dark:bg-black dark:border-white/[0.2] mt-1" align="end">
+        <DropdownMenuItem className="cursor-pointer text-black dark:text-white" onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("dark")}>
+        <DropdownMenuItem className="cursor-pointer text-black dark:text-white" onClick={() => setTheme("dark")}>
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("system")}>
+        <DropdownMenuItem className="cursor-pointer text-black dark:text-white" onClick={() => setTheme("system")}>
           System
         </DropdownMenuItem>
       </DropdownMenuContent>

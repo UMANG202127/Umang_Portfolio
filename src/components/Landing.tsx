@@ -18,7 +18,7 @@ function Landing() {
             <div>
             <div className="max-w-7xl relative mx-auto pt-20 md:pt-30 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-4xl lg:text-6xl text-black font-bold dark:text-white">
-        The Ultimate <br />Front-end Developer 
+        hi! , I'm Umang &#x1F44B;<br />Front-end Developer 
       </h1>
 
       <TextGenerateEffect
@@ -61,7 +61,7 @@ user interfaces. With over 1 year of industrial experience in <Highlight> Front-
             as={Link}
             href=""
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+            className="px-4 py-2 rounded-xl text-xs font-semibold text-black dark:text-white tracking-normal"
           >
             Contact Me
           </CardItem>
@@ -69,7 +69,7 @@ user interfaces. With over 1 year of industrial experience in <Highlight> Front-
           <CardItem
             translateZ={20}
             as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold tracking-normal"
           >
             Download CV
           </CardItem></Link>
