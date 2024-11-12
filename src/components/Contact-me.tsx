@@ -3,8 +3,11 @@ import React from 'react'
 import { FloatingDock } from './ui/floating-dock'
 import {
     IconBrandGithub,
+    IconBrandGmail,
+    IconBrandLinkedin,
     IconBrandX,
     IconExchange,
+    IconFile,
     IconHome,
     IconNewSection,
     IconTerminal2,
@@ -19,47 +22,47 @@ function Contactme() {
           icon: (
             <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
-          href: "#",
+          href: "",
         },
      
         {
-          title: "Products",
+          title: "Projects",
           icon: (
             <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },
         {
-          title: "Components",
+          title: "Resume",
           icon: (
-            <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconFile className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },
         {
-          title: "Aceternity UI",
+          title: "Umang",
           icon: (
             <Image
-              src=""
-              width={20}
-              height={20}
-              alt="Aceternity Logo"
+              src="/images/umang.jpg"
+              width={50}
+              height={50}
+              alt="Umang"
             />
           ),
-          href: "#",
+          href: "",
         },
         {
-          title: "Changelog",
+          title: "G-Mail",
           icon: (
-            <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },
      
         {
-          title: "Twitter",
+          title: "LinkedIn",
           icon: (
-            <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },
@@ -73,7 +76,7 @@ function Contactme() {
       ];
 
   return (
-    <div className="flex py-16 justify-center w-full">
+    <div className="flex py-16 justify-center w-full bg-gradient-to-b from-blue-100 to-purple-50 dark:from-neutral-950 dark:to-neutral-800">
       <FloatingDock
         items={links}
       />

@@ -18,7 +18,7 @@ function Landing() {
             <div>
             <div className="max-w-7xl relative mx-auto pt-20 md:pt-30 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-4xl lg:text-6xl text-black font-bold dark:text-white">
-        hi! , I'm Umang &#x1F44B;<br />Front-end Developer 
+        hi! , I'm Umang &#x1F44B;<br />Frontend Developer 
       </h1>
 
       <TextGenerateEffect
@@ -44,7 +44,7 @@ user interfaces. With over 1 year of industrial experience in <Highlight> Front-
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
-          Front-end Developer <br /> Gurugram, Haryana
+          Frontend Developer <br /> Gurugram, Haryana
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image

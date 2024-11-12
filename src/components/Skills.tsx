@@ -3,6 +3,8 @@ import React from 'react'
 import { HoverEffect } from './ui/card-hover-effect'
 import { motion } from 'framer-motion';
 import { LampContainer } from './ui/lamp';
+import { Highlight , HeroHighlight } from './ui/hero-highlight';
+
 
 
 export const projects = [
@@ -18,82 +20,86 @@ export const projects = [
         "",
       link: "https://netflix.com",
     },
-    // {
-    //   title: "C++",
-    //   description:
-    //     "A multinational technology company that specializes in Internet-related services and products.",
-    //   link: "https://google.com",
-    // },
-    // {
-    //   title: "HTML/HTML5",
-    //   description:
-    //     "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    //   link: "https://meta.com",
-    // },
-    // {
-    //   title: "CSS",
-    //   description:
-    //     "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    //   link: "https://amazon.com",
-    // },
-    // {
-    //   title: "Tailwind CSS",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
-    // {
-    //   title: "React.Js",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
-    // {
-    //   title: "NextJs",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
-    // {
-    //   title: "Git/GitHub",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
-    // {
-    //   title: "Docker",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
-    // {
-    //   title: "Postman",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
-    // {
-    //   title: "PlayWright",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
-    // {
-    //   title: "NodeJs",
-    //   description:
-    //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    //   link: "https://microsoft.com",
-    // },
+    {
+      title: "C++",
+      description:
+        "",
+      link: "https://google.com",
+    },
+    {
+      title: "HTML/HTML5",
+      description:
+        "",
+      link: "https://meta.com",
+    },
+    {
+      title: "CSS",
+      description:
+        "",
+      link: "https://amazon.com",
+    },
+    {
+      title: "Tailwind CSS",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "React.Js",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "NextJs",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "Git/GitHub",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "Docker",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "Postman",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "PlayWright",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "NodeJs",
+      description:
+        "",
+      link: "https://microsoft.com",
+    },
   ];
 
 function Skills() {
   return (
-    <div>
-      
+    <HeroHighlight>
+    <div className='w-screen'>
+      <h2 className="text-center text-4xl text-black dark:text-white mt-24 mb-10">
+          <Highlight>Technologies I know</Highlight>
+        </h2>
     <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={projects} />
     </div>
     </div>
+    </HeroHighlight>
   )
 }
 
